@@ -11,19 +11,30 @@
         margin: 0;
         padding: 0;
         background: linear-gradient(180deg, #6e006e, #21113a);
-        height: auto;
+        background fixed
+        height: 100vh;
+        background-attachment: fixed;
+
         color: rgb(101, 97, 138);
+      }
+      #nav {
+        padding: 5px;
       }
       .nav {
         background-color: darkmagenta;
         color: rgb(147, 181, 243);
+        padding-bottom: 5px;
       }
       .buttons {
+
         color: rgb(130, 238, 233);
+        padding-inline: 10px;
+        padding-block: 2px;
+        border: 1px solid darkmagenta;
       }
       a:hover {
-        background-color: rgb(55, 0, 107);
-        color: violet;
+        border: 1px solid rgb(204, 0, 255);
+
       }
       h1 {
         color: rgb(70, 88, 90);
@@ -32,7 +43,7 @@
   </head>
   <body>
     <div class="nav">
-      <div>Navigeer</div>
+      <div id="nav">Navigeer</div>
       <a href="#deel1" class="buttons">Ga naar deel 1</a>
       <a href="#deel2" class="buttons">Ga naar deel 2</a>
       <a href="./over.html" class="buttons">Over mijn HTML</a>
