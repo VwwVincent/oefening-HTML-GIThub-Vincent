@@ -8,6 +8,11 @@
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
     <style>
       body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(180deg, #6e006e, #21113a);
+      }
+      body {
         background-color: rgb(33, 17, 58);
         color: rgb(101, 97, 138);
       }
@@ -27,11 +32,24 @@
   <body>
     <div class="nav">
       <div>Navigeer</div>
-      <a href="./index.html" class="buttons">Terug naar mijn HTML</a>
+      <a href="./index.html" class="buttons">Mijn HTML</a>
     </div>
 
     <h1>Hier staat iets over mijn HTML</h1>
     <p>zogezegd...</p>
+    <p>Misschien meer als je op de afbeelding klikt...</p>
     <img src="./images/synthwave2.png" width="100%" height="auto" />
   </body>
+  <script>
+    const imageElement = document.querySelector("img");
+    const bodyElement = document.querySelector("body");
+    const voegFooterToe = () => {
+      bodyElement.appendChild(footerElement);
+    };
+
+    const footerElement = document.createElement("div");
+    footerElement.textContent = "U heeft op de afbeelding geklikt!";
+
+    imageElement.addEventListener("click", voegFooterToe);
+  </script>
 </html>
